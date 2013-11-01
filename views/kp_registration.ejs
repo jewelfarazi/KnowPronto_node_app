@@ -1,0 +1,127 @@
+<!-- Knowpronto Registration -->
+<div id="reg-content">
+    	<div class="reg-wrapper group">
+    		<!-- Registration header -->
+	    	<div class="reg-forms-holder">
+	    		<div class="reg-header group">
+	    			<h3 class="left">Registration Form</h3>
+
+	    			<h3 class="right">Already a member, Login here</h3>
+	    		</div>
+
+	    		<div class="reg-forms group">
+	    				<!-- sign up form -->
+		    			<div class="sign-up-form left">
+		    				<!-- Registration form -->
+		    				<form id="register_form" name="register_form"  method="post" action="{$form_action}" class="form_style" enctype="multipart/form-data">
+
+		    					<!-- generated from codes -->
+		    					<input type="hidden" name="Request_status" value="{$Request_status}" />
+								<input type="hidden" name="profile_id" value="{$profileId}" />
+								<input type="hidden" name="topicId" value="{$topicId}" />
+								<input type="hidden" id="u_type" name="type" value="{$type}" />
+								<input type="hidden" id="timezone" name="timezone" value="" />
+		    					
+		    					<!-- Name input box -->
+		    					<div class="f-row group">
+		    						<input type="text" id="reg-fname" name="reg-fname" value="" placeholder="First Name">
+
+		    						<div class="fn-error right">
+		    							Please Enter First Name
+		    						</div>
+		    					</div>
+
+		    					<div class="f-row group">
+		    						<input type="text" id="reg-lname" name="reg-lname" value="" placeholder="Last Name">
+
+		    						<div class="ln-error right">
+		    							Please Enter Last Name
+		    						</div>
+		    					</div>
+
+		    					<!-- Uesrname input box -->
+		    					<div class="f-row group">
+		    						<input type="text" id="reg-username" name="reg-username" value="" placeholder="Username" class="error">
+		    						<span class="loading2"></span>
+		    						<div class="u-error right">
+		    							Please Enter Username
+		    						</div>
+		    					</div>
+
+		    					<!-- Password input box -->
+		    					<div class="f-row group">
+		    						<input type="password" id="reg-password" name="reg-password" value="" placeholder="Password">
+
+		    						<div class="pw-error right">
+		    							Please Enter Password
+		    						</div>
+		    					</div>
+
+		    					<!-- Email input box -->
+		    					<div class="f-row group">
+		    						<input type="email" id="reg-email" name="reg-email" value="" placeholder="Email">
+		    						<span class="loading3"></span>
+		    						<div class="e-error right">
+		    							Please Enter Email
+		    						</div>
+		    					</div>
+
+		    					<!-- Agree with TOC -->
+		    					<div class="f-row group">
+		    						<input type="image" src="/images/submit_btn.png" id="reg-submit" class="left">
+		    						<span class="loading left">Please wait..</span>
+		    					</div>
+
+		    					<div class="f-row group">
+		    						
+		    						<p class="reg-p">By creating an account, you agree to our <a href="/termsofuse">Terms and Conditions</a>.</p>
+		    					</div>
+
+			    					
+		    						
+
+
+		    				</form>
+
+		    			</div>
+		    			<!-- login form -->
+		    			<div class="login-form right">
+
+		    				<form action="dologin" method="post">
+		    					
+		    					<!-- Username input box -->
+		    					<div class="f-row group">
+		    						<input type="text" id="log-username" name="username" value="" placeholder="Username">
+		    					</div>
+
+		    					<!-- Password input box -->
+		    					<div class="f-row group">
+		    						<input type="password" id="log-password" name="password" value="" placeholder="Password">
+		    					</div>
+
+		    					<div class="f-row group">
+		    						<input type="image" src="/images/login_btn.png" id="log-submit" value="Login">
+		    					</div>
+		    					
+
+		    					<div class="f-row group">
+		    						<p class="reg-p"><a href="#">Forgot Your Password?</a></p>
+		    					</div>
+
+		    				</form>
+
+		    				<div class="reg-with">
+
+		    					<h3>Register with</h3>
+
+		    					<a href="#" id="ajax_test"><img src="/images/fb_login_icon.png" alt="FB login"></a>
+		    					<a href="#"><img src="/images/tw_login_icon.png" alt="TW login"></a>
+		    				</div>
+
+		    			</div>
+
+	    		</div>
+	    	</div>
+
+    	</div>
+    </div>

@@ -1,0 +1,182 @@
+	<!-- user profile -->
+    <div id="profile-content">
+    	<div class="kp-wrapper group">
+
+			<div class="top-content group">
+
+				<div class="user-info-left left group">
+
+					<div class="user-img-box left">
+						<img src="images/image_placeholder.jpg" width="150">
+					</div>
+
+					<div class="user-info-box left">
+						<h2><%= user_info.first_name %> <%= user_info.last_name %></h2>
+
+						<p><strong>Web developer/programmer</strong></p>
+						<% if(user_info.eduction !== null) { %>
+						<p><strong><%= user_info.eduction %></strong></p>
+						<p><strong>Major: Computer Science</strong></p>
+						<% } %>
+						
+						<nav class="user-social-links">
+
+							<ul class="u-s-links">
+								<% if(user_info.link_facebook !== null) { %>
+								<li><a href="<%= user_info.link_facebook %>" target="_blank"><img src="images/i_f.png" width="35"></a></li>
+								<% } %>
+								<% if(user_info.link_twitter !== null) { %>
+								<li><a href="<%= user_info.link_twitter %>" target="_blank"><img src="images/i_t.png" width="35"></a></li>
+								<% } %>
+								<% if(user_info.link_linkedin !== null) { %>
+								<li><a href="<%= user_info.link_linkedin %>" target="_blank"><img src="images/i_l.png" width="35"></a></li>
+								<% } %>
+								<% if(user_info.link_googleplus !== null) { %>
+								<li><a href="<%= user_info.link_googleplus %>" target="_blank"><img src="images/i_g.png" width="35"></a></li>
+								<% } %>
+								<% if(user_info.link_pinterest !== null) { %>
+								<li><a href="<%= user_info.link_pinterest %>" target="_blank"><img src="images/i_p.png" width="35"></a></li>
+								<% } %>
+								<% if(user_info.link_youtube !== null) { %>
+								<li><a href="<%= user_info.link_youtube %>" target="_blank"><img src="images/i_y.png" width="35"></a></li>
+								<% } %>
+							</ul>
+
+						</nav>
+
+					</div>
+
+				</div>
+
+				<div class="user-info-right right">
+					<h2>Hourly Rate: $<%= user_price %></h2>
+					<p><em>(Pay <u>only</u> for the time you use)</em></p>
+
+					<h3>Ratings: 1 2 3 4 5</h3>
+				</div>				
+
+			</div>
+
+			<div class="mid-content group">
+
+				<div class="user-about-me left">
+					<h3>About me</h3>
+
+					<% if(user_info.about_me !== null) { %>
+					<p>
+						<%= user_info.about_me %>
+					</p>
+					<% } %>
+				</div>
+
+				<div class="user-intro-video right">
+					<h3>Watch Intro Video</h3>
+
+					<h3>Send Message</h3>
+
+					<h3>Book Availability</h3>
+				</div>
+
+			</div>
+
+			<div class="bot-content group">
+
+				<h3>Knowledge</h3>
+
+				<div class="kno-label-holder group">
+					<div class="kno1 left">
+						<h4>Topic</h4>
+					</div>
+
+					<div class="kno2 left">
+						<h4>level</h4>
+					</div>
+
+					<div class="kno3 left">
+						<h4>Rating</h4>
+					</div>
+
+					<div class="kno4 left">
+						<h4>Value</h4>
+					</div>
+
+					<div class="kno5 left">
+						<h4>Chats</h4>
+					</div>
+
+					<div class="kno6 left">
+						<h4>video</h4>
+					</div>
+
+				</div>
+
+				<div class="kno-label-holder2 group">
+					<div class="kno1 left">
+						<p>Php</p>
+					</div>
+
+					<div class="kno2 left">
+						<p>World Expert(10)</p>
+					</div>
+
+					<div class="kno3 left">
+						<p>5.00 From 1</p>
+					</div>
+
+					<div class="kno4 left">
+						<p>5.00 From 1</p>
+					</div>
+
+					<div class="kno5 left">
+						<p>1</p>
+					</div>
+
+					<div class="kno6 left">
+						<p>Record</p>
+					</div>
+
+				</div>
+
+				<div class="kno-label-holder2 group">
+					<div class="kno1 left">
+						<p>Mysql</p>
+					</div>
+
+					<div class="kno2 left">
+						<p>World Expert(10)</p>
+					</div>
+
+					<div class="kno3 left">
+						<p>5.00 From 1</p>
+					</div>
+
+					<div class="kno4 left">
+						<p>5.00 From 1</p>
+					</div>
+
+					<div class="kno5 left">
+						<p>1</p>
+					</div>
+
+					<div class="kno6 left">
+						<p>Record</p>
+					</div>
+
+				</div>
+
+				<h3>Education &amp; Work Experience</h3>
+
+				<div class="kno-label-holder2 group">
+					<p>Education: <%= (user_info.eduction !== null) ? user_info.eduction : "" %>
+						
+					<br>
+					<br>
+					<p>Experience: Dreamboat Enterprises</p>
+				</div>
+
+				<h3>Schedule</h3>
+
+			</div>
+
+    	</div>
+    </div>

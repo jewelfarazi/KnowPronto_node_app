@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title><%= title %></title>
+	<meta name="description" content="Know Pronto is your 1 to 1 video study portal. Join now as an adviser or student!">
+	<meta name="keywords" content="Education, How to Speak English, Speaking English, Learn and Speak English Online, English Education, Mathematics Education, Learn Online, Teaching Online">
+	<meta name="author" content="Dreamboat Enterprises">
+	<meta name="robots" content="index,follow">
+	<!--FAVICON ICON-->
+	<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+	<!--STYLESHEETS-->
+    <link rel='stylesheet' type="text/css" href='/stylesheets/home-new.css'>
+    <!--JAVASCRIPTS-->
+	<script type="text/javascript" src="/javascripts/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="/javascripts/kp-script.js"></script>
+	
+	<!--[if lt IE 9]>
+		<script src="/js/html5shiv.js" type="text/javascript"></script>
+	<![endif]-->
+
+</head>
+<body>
+
+  <% if(typeof(landingPage) != 'undefined') { %>
+  <!-- Free trail tab -->
+	<div id="free-tab">
+		<div id="open-close" class="left tab-open">
+			<div class="init-tab"></div>
+		</div>
+		<div id="tab-content" class="right" onclick="return lernSignUpC();">
+			<h2>20MIN FREE HELP</H2>
+			<P>To get a free 5 minute trial with 4 advisers <br>use this code when you sign up:</P>
+			<h3>LETSSTART</h3>
+			<P>You can get more free trials by inviting friends too!</P>
+		</div>
+	</div>
+  <% } %>
+	<!-- Header -->
+    <header id="kp_header">
+      <div class="kp-wrapper group">
+        <div id="header-container-top">
+          <!-- logo -->
+          <div id="logo" class="left">
+            <a href="/" title="KnowPronto.Com"><img src="/images/logo.png" alt="Knowpronto logo"></a>
+          </div>
+
+          <!-- top navigation -->
+                <nav id="access" class="right" role="navigation">
+                <% if(typeof(loggedIn) != 'undefined') { %>
+                  <div class="ul-menu group">
+                    <ul>
+                      <li>
+                        <a href="/login"><img src="/images/sign_in.png"><span>Log in</span></a>
+                      </li>
+                      <li>
+                        <a href="/signup"><img src="/images/sign_up.png"><span>Sign up</span></a>
+                      </li>
+                      <li>
+                        <a href="/HowItWorks"><img src="/images/support.png"><span>Support</span></a>
+                      </li>
+                    </ul>
+                  </div>
+                <% } %>
+                </nav>
+            
+        </div><!-- END #header top -->
+
+      </div>
+    </header><!-- END #header -->
